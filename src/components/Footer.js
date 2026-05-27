@@ -6,7 +6,7 @@ export default function Footer() {
     <footer style={{ background: 'var(--navy)', borderTop: '1px solid rgba(184,150,90,0.12)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '56px 5% 32px', display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 40 }} className="footer-grid">
         <div>
-          <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 20, fontWeight: 700, color: '#fff', marginBottom: 12 }}>Toronto Notary Office</h3>
+          <img src="/logo.png" alt="Toronto Notary Office" style={{ height: 52, width: 'auto', objectFit: 'contain', marginBottom: 16 }} />
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8, maxWidth: 240, marginBottom: 16 }}>
             Professional notary services in Toronto. Fast, affordable, and legally precise.
           </p>

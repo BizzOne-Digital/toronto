@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Logo = () => (
-  <svg width="42" height="34" viewBox="0 0 42 34" fill="none">
-    <rect width="13" height="34" fill="#1a4b8c"/>
-    <rect x="13" width="13" height="34" fill="#2d6cc4"/>
-    <polygon points="13,0 26,0 13,19" fill="#0a1628"/>
-    <rect x="28" width="14" height="34" fill="#1a4b8c"/>
-    <line x1="28" y1="0" x2="42" y2="34" stroke="#2d6cc4" strokeWidth="3.5"/>
-  </svg>
-);
-
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -41,12 +31,9 @@ export default function Navbar() {
         transition: 'all 0.3s',
       }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 5%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 70 }}>
-          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
-            <Logo />
-            <div>
-              <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 15, fontWeight: 700, color: '#fff', letterSpacing: 1 }}>TORONTO</div>
-              <div style={{ fontSize: 9, color: 'var(--gold)', letterSpacing: 3, textTransform: 'uppercase' }}>NOTARY OFFICE</div>
-            </div>
+          
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <img src="/logo.png" alt="Toronto Notary Office" style={{ height: 46, width: 'auto', objectFit: 'contain' , mixBlendMode: 'screen' }} />
           </Link>
 
           {/* Desktop links */}
