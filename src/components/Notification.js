@@ -41,7 +41,7 @@ export function Footer() {
       </div>
       <div style={{ borderTop: '1px solid rgba(184,150,90,0.12)', padding: '20px 5%', maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
         <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>© 2026 Toronto Notary Office. All rights reserved.</p>
-        <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>Varun Vashisht — Barrister, Solicitor & Notary Public</p>
+        <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>Toronto's Trusted Notary — Barrister, Solicitor & Notary Public</p>
       </div>
       <style>{`@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr!important;}}`}</style>
     </footer>

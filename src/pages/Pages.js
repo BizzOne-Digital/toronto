@@ -95,10 +95,8 @@ export function Services() {
 export function About() {
   return (
     <div style={{ paddingTop: 70 }}>
-      {/* Hero with image */}
       <div style={{ background: 'var(--navy)', minHeight: 520, display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(26,75,140,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(26,75,140,0.08) 1px,transparent 1px)', backgroundSize: '40px 40px' }}/>
-        {/* Side image */}
         <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '40%', overflow: 'hidden' }}>
           <img src="https://images.unsplash.com/photo-1521791055366-0d553872952f?w=800&q=80" alt="Legal professional"
             style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.28 }}/>
@@ -118,7 +116,6 @@ export function About() {
         </div>
       </div>
 
-      {/* Values */}
       <section style={{ padding: '96px 5%', background: '#fff' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <span className="section-label">Our Values</span>
@@ -126,7 +123,7 @@ export function About() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 40, marginTop: 56 }} className="values-grid">
             {[
               { title: 'Speed Without Compromise', body: "Most documents completed in under 5 minutes. We've streamlined every step without cutting corners on accuracy or legality." },
-              { title: 'Transparency', body: 'Flat-rate pricing starting at $35. No hidden fees. No surprise charges. You know what you\'ll pay before you arrive.' },
+              { title: 'Transparency', body: "Flat-rate pricing starting at $35. No hidden fees. No surprise charges. You know what you'll pay before you arrive." },
               { title: 'Accessibility', body: 'Located on the TTC subway line. Virtual services available. Same-day appointments. We meet you where you are.' },
             ].map(v => (
               <div key={v.title} style={{ padding: '36px 32px', borderLeft: '3px solid var(--gold)' }}>
@@ -138,19 +135,18 @@ export function About() {
         </div>
       </section>
 
-      {/* Meet the notary */}
       <section style={{ background: 'var(--cream)', padding: '80px 5%' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }} className="about-split">
           <div>
             <span className="section-label">The Notary</span>
-            <h2 className="section-title">Varun Vashisht</h2>
+            <h2 className="section-title">Toronto's Trusted Notary</h2>
             <p style={{ fontSize: 15, color: 'var(--text)', lineHeight: 1.8, marginBottom: 20 }}>
-              Barrister, Solicitor and Notary Public licensed in Ontario, Canada. With extensive legal experience, Varun has helped hundreds of Toronto residents and businesses with their notarial needs.
+              Barrister, Solicitor and Notary Public licensed in Ontario, Canada. We have helped hundreds of Toronto residents and businesses with their notarial needs.
             </p>
             <p style={{ fontSize: 15, color: 'var(--text)', lineHeight: 1.8, marginBottom: 32 }}>
-              His commitment to fast, precise, and client-centered service makes Toronto Notary Office one of the most accessible notary practices in the city.
+              Our commitment to fast, precise, and client-centered service makes Toronto Notary Office one of the most accessible notary practices in the city.
             </p>
-            <Link to="/booking" className="btn-primary">Book with Varun</Link>
+            <Link to="/booking" className="btn-primary">Book an Appointment</Link>
           </div>
           <div style={{ background: 'var(--navy)', padding: '44px', borderRadius: 4 }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
@@ -206,9 +202,9 @@ export function Contact() {
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '72px 5%', display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 72 }} className="contact-grid">
         <div>
           {[
-            { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>, label: 'Phone', val: '+1 437 217 2780', href: 'tel:+14372172780' },
+            { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>, label: 'Phone', val: '416-572-9794', href: 'tel:4165729794' },
             { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, label: 'Email', val: 'info@torontonotaryoffice.ca', href: 'mailto:info@torontonotaryoffice.ca' },
-            { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>, label: 'Location', val: 'Toronto, Ontario\nOn the TTC Subway Line', href: null },
+            { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>, label: 'Location', val: '5000 Yonge Street, Suite 1901\nToronto, ON M2N 7E9', href: null },
           ].map(item => (
             <div key={item.label} style={{ display: 'flex', gap: 18, marginBottom: 36 }}>
               <div style={{ width: 46, height: 46, background: 'rgba(26,75,140,0.07)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: 'var(--blue)' }}>{item.icon}</div>
@@ -222,7 +218,6 @@ export function Contact() {
             </div>
           ))}
 
-          {/* Hours */}
           <div style={{ background: 'var(--navy)', padding: '32px', borderRadius: 4 }}>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 18 }}>Office Hours</h3>
             {[['Monday – Friday', 'By Appointment'], ['Saturday', 'By Appointment'], ['Sunday', 'Limited']].map(([day, hours]) => (
