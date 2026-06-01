@@ -33,7 +33,7 @@ export default function Navbar() {
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 5%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 70 }}>
           
           <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-            <img src="/logo.png" alt="Toronto Notary Office" style={{ height: 46, width: 'auto', objectFit: 'contain' , mixBlendMode: 'screen' }} />
+            <img src="/logo1.png" alt="Toronto Notary Office" style={{ height: 46, width: 'auto', objectFit: 'contain' , mixBlendMode: 'screen' }} />
           </Link>
 
           {/* Desktop links */}
